@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link ref="icon" type="imagr/ico" href="favicon.ico"></link>
+	<link rel="shortcut icon" href="favicon.ico"><link>
+    <link rel="stylesheet" type="text/css" href="styles.css" m/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Home</title>
+</head>
+<body>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+		$(document).ready( function(){
+			// $("div.category_content").hide();
+			 $("h4.category_title").click(function(){
+					$(this).next("div.category_content").slideUp("fast");
+					$(this).next("div.category_content:hidden").slideDown("fast");
+					});
+			 });
+	</script>
+    <div id="wrapper">
+    
+    	<div id="header">
+        Logo, description and so on of the forum :)
+        </div>
+        
+        <div id="navigation">
+        Buttons to navigate forum( member list, FAQs, new posts, search etc. )
+        </div>
+        
+	    <div id="categories">
+            
+            <h4 class="category_title">This is the title of Category 1</h4>
+            <div class="category_content">
+                This is the content of the Category 3
+            </div>
+            
+            <h4 class="category_title">This is the title of Category 2</h4>
+            <div class="category_content">
+                This is the content of the Category 3
+            </div>
+            <h4 class="category_title">This is the title of Category 3</h4>
+            <div class="category_content">
+                This is the content of the Category 3
+            </div>
+        </div>
+        
+        <div id="members_statistic">
+        	Members online
+        </div>
+    </div>
+</body>
+</html>
