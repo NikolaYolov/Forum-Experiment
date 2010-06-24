@@ -1,55 +1,81 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<link ref="icon" type="imagr/ico" href="favicon.ico"></link>
-	<link rel="shortcut icon" href="favicon.ico"><link>
-    <link rel="stylesheet" type="text/css" href="styles.css" m/>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Home</title>
-</head>
-<body>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+  <head>
+    <link ref="icon" type="image/ico" href="favicon.ico"></link>
+    <link rel="shortcut icon" href="favicon.ico"><link>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.js"></script>
 
     <script type="text/javascript">
-		$(document).ready( function(){
-			// $("div.category_content").hide();
-			 $("h4.category_title").click(function(){
-					$(this).next("div.category_content").slideUp("fast");
-					$(this).next("div.category_content:hidden").slideDown("fast");
-					});
-			 });
-	</script>
+      $(document).ready( function(){
+          // $("div.category_content").hide();
+        $("h4.category_title").click(function(){
+          $(this).next("div.category_content").slideUp("fast");
+          $(this).next("div.category_content:hidden").slideDown("fast");
+          });
+        });
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Home</title>
+  </head>
+  <body>
     <div id="wrapper">
-    
-    	<div id="header">
+
+      <div id="header">
         Logo, description and so on of the forum :)
-        </div>
-        
-        <div id="navigation">
+      </div>
+
+      <div id="navigation">
         Buttons to navigate forum( member list, FAQs, new posts, search etc. )
+      </div>
+
+      <div id="categories">
+
+        <h4 class="category_title">This is the title of Category 1</h4>
+        <div class="category_content">
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed massa libero,
+            nec interdum diam. Sed viverra urna ac nibh cursus nec posuere tortor
+            venenatis. Aenean vitae massa enim. Pellentesque hendrerit massa et quam
+            cursus fringilla. Etiam rhoncus feugiat eleifend. In pellentesque ipsum nec
+            diam bibendum blandit. Vestibulum ac dui risus, in tristique nisl. Etiam ut
+            justo lectus. Curabitur blandit fermentum porttitor. Donec aliquet adipiscing
+            enim sed fermentum. Aenean ac neque elit, eu aliquet justo. Vestibulum
+            pharetra arcu non enim auctor ut mattis leo sollicitudin. Aliquam vehicula
+            lobortis dictum. Aliquam nisi diam, imperdiet ac convallis non, venenatis
+            vitae orci. Morbi suscipit bibendum lacus non vulputate.
+          </div>
         </div>
-        
-	    <div id="categories">
-            
-            <h4 class="category_title">This is the title of Category 1</h4>
-            <div class="category_content">
-                This is the content of the Category 1
-            </div>
-            
-            <h4 class="category_title">This is the title of Category 2</h4>
-            <div class="category_content">
-                This is the content of the Category 2
-            </div>
-            <h4 class="category_title">This is the title of Category 3</h4>
-            <div class="category_content">
-                This is the content of the Category 3
-            </div>
+
+        <h4 class="category_title">This is the title of Category 2</h4>
+        <div class="category_content">
+          <div>
+            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius,
+            turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis
+            sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac
+            tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam
+            tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id
+            tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec
+            fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec,
+            commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum
+            aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat.
+            Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue
+            lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis
+            quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+          </div>
         </div>
-        
-        <div id="members_statistic">
-        	Members online
+        <h4 class="category_title">This is the title of Category 3</h4>
+        <div class="category_content">
+          This is the content of the Category 3
         </div>
+      </div>
+
+      <div id="members_statistic">
+        Members online
+      </div>
     </div>
-</body>
+  </body>
 </html>

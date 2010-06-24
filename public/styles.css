@@ -1,41 +1,40 @@
 @charset "utf-8";
 body{
-	background-color:#272727;
-	font:Georgia, "Times New Roman", Times, serif;
-	color:#CCCCCC;
+  background-color:#272727;
+  font:Georgia, "Times New Roman", Times, serif;
+  color:#CCCCCC;
 }
 
 #wrapper{
-	background: none repeat scroll 0 0 #373737;
-	margin: 1px;
+  background: none repeat scroll 0 0 #373737;
+  margin: 1px;
 }
 
 #header{
-	height: 100px;
+  height: 100px;
 }
 
 #navigation{
-	height: 30px;
-	padding: 1px;
-	background-color: #E86300;
+  height: 30px;
+  padding: 1px;
+  background-color: #E86300;
 }
 
 #members_statistic{
-	height: 100px;
+  height: 100px;
 }
 
 #categories{
-	margin: 50px;
+  margin: 50px;
 }
 
 .category_title{
-	border:solid;
-	border-width:1px;
-	width:200px;
-	background-image:
+  border:solid;
+  border-width:1px;
+  width:200px;
+  background-image:
 }
 
 h4{
-	margin: 0px;
+  margin: 0px;
 }
-
