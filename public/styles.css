@@ -1,40 +1,80 @@
 @charset "utf-8";
 body{
-  background-color:#272727;
-  font:Georgia, "Times New Roman", Times, serif;
-  color:#CCCCCC;
+	background-color: #272727;
+	font: Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
 }
 
 #wrapper{
-  background: none repeat scroll 0 0 #373737;
-  margin: 1px;
+	background: none repeat scroll 0 0 #373737;
+	margin: 1px;
 }
 
 #header{
-  height: 100px;
+	height: 100px;
 }
 
 #navigation{
-  height: 30px;
-  padding: 1px;
-  background-color: #E86300;
+	height: 33px;
+	background: url('images/navigation.gif') repeat-x;
+}
+
+.aerobuttonmenu{
+	overflow: hidden;
+	width: 1000px;
+	padding: 1px;
+}
+
+.aerobuttonmenu a.aero{
+	background: transparent url('images/aeroleft.gif') no-repeat top left;
+	display: block;
+	float: left;
+	line-height: 23px;
+	height: 31px;
+	padding-left: 10px;
+	text-decoration: none;
+	margin-right: 5px;
+	opacity: 0.9;
+}
+
+.aerobuttonmenu a.aero:link, .aerobuttonmenu a.aero:visited, .aerbuttonmenu a:active{
+	color: white;
+}
+
+.aerobuttonmenu a.aero span{
+	background: transparent url('images/aeroright.gif') no-repeat top right;
+	font:Georgia, "Times New Roman", Times, serif;
+	display: block;
+	padding: 4px 10px 6px 0;
+}
+
+.aerobuttonmenu a.aero:hover{
+	opacity: 1;
+}
+
+.aerobuttonmenu a.aero:hover span{
+	color: #F90;
+}
+
+.block a.aero{
+	background-image: url('images/aeroleft.gif');
 }
 
 #members_statistic{
-  height: 100px;
+	height: 100px;
 }
 
 #categories{
-  margin: 50px;
+	margin-top: 25px;
 }
 
 .category_title{
-  border:solid;
-  border-width:1px;
-  width:200px;
-  background-image:
+	background: url('images/category.gif') repeat-x;
+	height: 33px;
+	font-weight: bold;
 }
 
-h4{
-  margin: 0px;
+.category_title a{
+	text-decoration: none;
+	padding-right: 10px;
 }
