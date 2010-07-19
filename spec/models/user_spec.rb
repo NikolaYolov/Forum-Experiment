@@ -1,22 +1,20 @@
 require 'spec_helper'
 
 describe User do
-  before(:each) do
-    @valid_attributes = {
-      :username         => "joe",
-      :crypted_password => "some_crypted_password_here",
-      :email            => "joe@none.com",
-      :is_admin         => false,
-      :first_name       => "Joe",
-      :last_name        => "Joe"
-    }
+  it "should create a valid instance given valid attributes" do
+    Factory.build(:user).should be_valid
   end
 
-  it "should create a new instance given valid attributes" do
-    User.create!(@valid_attributes)
+  it "should be invalid without a username" do
+    Factory.build(:user, :username => nil).should_not be_valid
   end
 
-  it "should be invalid without a username"
-  it "should be invalid without an email"
-  it "should have a valid email"
+  it "should be invalid without an email" do
+    Factory.build(:user, :email => nil).should_not be_valid
+  end
+
+  it "should have a valid email" do
+    Factory.build(:user, :email => 'foo').should_not be_valid
+    Factory.build(:user, :email => 'foo@bar').should_not be_valid
+  end
 end
